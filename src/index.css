@@ -9,4 +9,10 @@
         font-weight: 400;
         src: url("@fontsource/ubuntu/files/ubuntu-latin-400-normal.woff2") format("woff2");
     }
+    @font-face {
+        font-family: "Special Elite";
+        font-style: normal;
+        font-weight: 400;
+        src: url("@fontsource/special-elite/files/special-elite-latin-400-normal.woff2") format("woff2");
+    }
 }

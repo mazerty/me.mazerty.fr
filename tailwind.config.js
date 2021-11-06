@@ -5,7 +5,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ["Ubuntu", ...defaultTheme.fontFamily.sans]
+                sans: ["Ubuntu", ...defaultTheme.fontFamily.sans],
+                specialelite: ["Special Elite", ...defaultTheme.fontFamily.sans]
             }
         }
     }
