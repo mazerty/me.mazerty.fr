@@ -1,41 +1,41 @@
 import {Disclosure} from "@headlessui/react"
 import {ChevronRightIcon} from "@heroicons/react/outline"
 
-export default function Bookmarks() {
-    const bookmarks = [{
-        title: "Main",
-        open: true,
-        bookmarks: [
-            {title: "Gmail", url: "https://mail.google.com"},
-            {title: "Feedly", url: "https://feedly.com"},
-            {title: "Twitter", url: "https://twitter.com"},
-            {title: "GitHub", url: "https://github.com"},
-            {title: "DeviantArt", url: "https://deviantart.com"},
-            {title: "Météo", url: "https://meteofrance.com"},
-            {title: "ING Direct", url: "https://m.ing.fr/secure/login/cif"},
-            {title: "LinkedIn", url: "https://linkedin.com"},
-            {title: "TweetDeck", url: "https://tweetdeck.twitter.com"}
-        ]
-    }, {
-        title: "UGC",
-        bookmarks: [
-            {title: "Part-Dieu", url: "https://www.ugc.fr/cinema.html?id=34"},
-            {title: "Confluence", url: "https://www.ugc.fr/cinema.html?id=36"},
-            {title: "Cité Internationale", url: "https://www.ugc.fr/cinema.html?id=32"},
-            {title: "Astoria", url: "https://www.ugc.fr/cinema.html?id=33"}
-        ]
-    }, {
-        title: "Handy",
-        bookmarks: [
-            {title: "AWS", url: "https://mazerty.signin.aws.amazon.com/console"},
-            {title: "Speed test", url: "https://speed.cloudflare.com"},
-            {title: "Tunefind", url: "https://www.tunefind.com"},
-            {title: "SubsPlease", url: "https://subsplease.org"},
-            {title: "Morrowind Map", url: "https://en.uesp.net/maps/mwmap/mwmap.shtml"}
-        ]
-    }]
+const bookmarks = [{
+    title: "Main",
+    open: true,
+    bookmarks: [
+        {title: "Gmail", url: "https://mail.google.com"},
+        {title: "Feedly", url: "https://feedly.com"},
+        {title: "Twitter", url: "https://twitter.com"},
+        {title: "GitHub", url: "https://github.com"},
+        {title: "DeviantArt", url: "https://deviantart.com"},
+        {title: "Météo", url: "https://meteofrance.com"},
+        {title: "ING Direct", url: "https://m.ing.fr/secure/login/cif"},
+        {title: "LinkedIn", url: "https://linkedin.com"},
+        {title: "TweetDeck", url: "https://tweetdeck.twitter.com"}
+    ]
+}, {
+    title: "UGC",
+    bookmarks: [
+        {title: "Part-Dieu", url: "https://www.ugc.fr/cinema.html?id=34"},
+        {title: "Confluence", url: "https://www.ugc.fr/cinema.html?id=36"},
+        {title: "Cité Internationale", url: "https://www.ugc.fr/cinema.html?id=32"},
+        {title: "Astoria", url: "https://www.ugc.fr/cinema.html?id=33"}
+    ]
+}, {
+    title: "Handy",
+    bookmarks: [
+        {title: "AWS", url: "https://mazerty.signin.aws.amazon.com/console"},
+        {title: "Speed test", url: "https://speed.cloudflare.com"},
+        {title: "Tunefind", url: "https://www.tunefind.com"},
+        {title: "SubsPlease", url: "https://subsplease.org"},
+        {title: "Morrowind Map", url: "https://en.uesp.net/maps/mwmap/mwmap.shtml"}
+    ]
+}]
 
-    return <section className="bg-gray-700 text-gray-200 px-5 py-20 min-h-screen">
+export default () => (
+    <section className="bg-gray-700 text-gray-200 px-5 py-20 min-h-screen">
         <div className="max-w-2xl mx-auto">
             <div className="pb-3 font-specialelite text-3xl">Bookmarks</div>
             <div className="border border-gray-500 rounded divide-y divide-gray-500 shadow-lg">
@@ -60,4 +60,4 @@ export default function Bookmarks() {
             </div>
         </div>
     </section>
-}
+)
