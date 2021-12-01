@@ -39,7 +39,7 @@ export default () => (
         <div className="max-w-2xl mx-auto">
             <div className="pb-3 font-specialelite text-3xl">Bookmarks</div>
             <div className="border border-gray-500 rounded divide-y divide-gray-500 shadow-lg">
-                {bookmarks.map((category) => (
+                {bookmarks.map(category => (
                     <Disclosure key={category.title} defaultOpen={category.open}>
                         {({open}) => <>
                             <Disclosure.Button as="div" className="px-4 py-3 flex items-center cursor-pointer">
@@ -47,7 +47,7 @@ export default () => (
                                 <div>{category.title}</div>
                             </Disclosure.Button>
                             <Disclosure.Panel className="px-5 py-4 bg-gray-702 text-gray-400">
-                                {category.bookmarks.map((bookmark) => (
+                                {category.bookmarks.map(bookmark => (
                                     <div key={bookmark.title} className="truncate">
                                         <a href={bookmark.url} className="mr-3 text-gray-200 hover:underline">{bookmark.title}</a>
                                         <a href={bookmark.url} className="hover:underline">{bookmark.url}</a>
