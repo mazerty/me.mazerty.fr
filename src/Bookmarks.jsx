@@ -12,6 +12,7 @@ const bookmarks = [{
         {title: "DeviantArt", url: "https://deviantart.com"},
         {title: "Météo", url: "https://meteofrance.com"},
         {title: "ING Direct", url: "https://m.ing.fr/secure/login/cif"},
+        {title: "Fortuneo", url: "https://mabanque.fortuneo.fr"},
         {title: "LinkedIn", url: "https://linkedin.com"},
         {title: "TweetDeck", url: "https://tweetdeck.twitter.com"}
     ]
