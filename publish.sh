@@ -1,3 +1,5 @@
+#!/bin/bash -ex
+
 PROJECT=me.mazerty.fr
 
 cd /tmp/
